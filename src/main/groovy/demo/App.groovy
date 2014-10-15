@@ -1,10 +1,14 @@
 package demo
 
-@org.springframework.context.annotation.ComponentScan('demo')
-@org.springframework.boot.autoconfigure.EnableAutoConfiguration
+import org.springframework.boot.SpringApplication
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration
+import org.springframework.context.annotation.ComponentScan
+
+@ComponentScan('demo')
+@EnableAutoConfiguration
 class App {
 
   static void main(String[] args) {
-    org.springframework.boot.SpringApplication.run(App, args)
+    SpringApplication.run App, args
   }
 }

@@ -1,0 +1,21 @@
+img {
+  max-width: 110%;
+  height: auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.rowcolor {
+  background-color: #CCCCCC;
+}
+
+.padall {
+  padding: 10px;
+}
+
+.icon {
+  font-size: 23px;
+  color: #197BB5;
+}

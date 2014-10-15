@@ -4,13 +4,17 @@ buildscript {
     jcenter()
   }
   dependencies {
+    classpath 'org.springframework:springloaded:1.2.0.RELEASE'
     classpath "org.springframework.boot:spring-boot-gradle-plugin:${project.springBootVersion}"
+    classpath 'com.bluepapa32:gradle-watch-plugin:0.1.3'
   }
 }
 
+apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'spring-boot'
 apply plugin: 'idea'
+apply plugin: 'watch'
 
 repositories {
   jcenter()
@@ -22,14 +26,29 @@ repositories {
   maven { url 'http://repo.sindica.to/nexus/content/repositories/snapshots/' }
 }
 
+sourceCompatibility = project.javaVersion
+targetCompatibility = project.javaVersion
+
 //def bootModules = ['logging', 'actuator', 'thymeleaf']
-//def bootModules = ['logging', 'actuator']
+def bootModules = ['logging', 'actuator']
 
 dependencies {
-  /*bootModules.each {module ->
+  bootModules.each {module ->
     compile "org.springframework.boot:spring-boot-starter-${module}:${project.springBootVersion}"
-  }*/
-  compile "org.springframework.boot:spring-boot-starter-jade4j:0.0.5-SNAPSHOT"
+  }
+  compile "org.springframework.boot:spring-boot-starter-jade4j:0.1.1-SNAPSHOT"
   compile 'org.codehaus.groovy:groovy-all:2.3.7'
+  compile 'org.webjars:bootstrap:3.2.0'
+  compile 'org.webjars:font-awesome:4.2.0'
 }
 
+watch {
+  groovy {
+    files files('src/main/groovy')
+    tasks 'compileGroovy'
+  }
+  resources {
+    files files('src/main/resources')
+    tasks 'processResources'
+  }
+}
