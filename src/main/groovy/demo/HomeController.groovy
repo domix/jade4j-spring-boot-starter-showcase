@@ -1,7 +1,8 @@
 package demo
 
-import org.springframework.stereotype.Controller
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.ui.Model
+import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping
 
 /**
@@ -9,15 +10,17 @@ import org.springframework.web.bind.annotation.RequestMapping
  */
 @Controller
 class HomeController {
+  @Autowired
+  PropertyService propertyService
 
   @RequestMapping('/')
   String index(Model model) {
-    model.addAttribute 'user', 'domix'
+    model.addAttribute 'properties', propertyService.findProperties()
     'index'
   }
 
   @RequestMapping('/th')
-  String index2(Model model) {
+  String renderWithThymeleaf(Model model) {
     model.addAttribute 'user', 'domix'
     'th'
   }

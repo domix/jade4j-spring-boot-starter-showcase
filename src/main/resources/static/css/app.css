@@ -19,3 +19,137 @@ img {
   font-size: 23px;
   color: #197BB5;
 }
+
+
+/* for fixed navbar */
+body
+{ 
+    padding-top: 50px;
+}
+.index-header
+{
+    width: 100%;
+    padding-bottom:20px;
+    padding-top:30px;
+    font-size: 24px;
+    color: white;
+    background-color: #2bacf5;
+    margin-bottom: 30px;
+}
+.index-header h1
+{
+    font-size: 60px;
+    line-height: 1;
+}
+
+#footer {    
+    background-color:#2bacf5;
+    width:100%;
+    color:white;
+}
+#footer a, #footer a:visited { 
+    color:white;
+}
+#footer a:active, #footer a:hover, #footer a:focus { 
+    color:white;
+    text-decoration:underline;
+}
+
+/* Bootstrap overrides */
+#main_navbar.navbar-default
+{
+    background-color: #2bacf5;
+    border-color: #1778dc;
+    color: white;
+}
+#main_navbar.navbar-default .navbar-brand,
+#main_navbar.navbar-default .navbar-brand:hover,
+#main_navbar.navbar-default .navbar-brand:active,
+#main_navbar.navbar-default .navbar-brand:focus
+{
+    color: white;
+    font-weight: bold;
+}
+#main_navbar.navbar-default .navbar-toggle
+{
+    color: white;
+    background-color: #2bacf5;
+    border-color: white;
+}
+#main_navbar.navbar-default .navbar-toggle .icon-bar
+{
+    background-color: white;
+}
+#main_navbar.navbar-default .navbar-toggle:hover,
+#main_navbar.navbar-default .navbar-toggle:active,
+#main_navbar.navbar-default .navbar-toggle:focus
+{
+    color: #F58723;
+    background-color: white;
+}
+#main_navbar.navbar-default .navbar-toggle:hover .icon-bar,
+#main_navbar.navbar-default .navbar-toggle:active .icon-bar,
+#main_navbar.navbar-default .navbar-toggle:focus .icon-bar
+{
+    background-color: #2bacf5;
+}
+#main_navbar.navbar-default .navbar-nav > li > a,
+#main_navbar.navbar-default .navbar-nav > li > a:visited,
+#main_navbar.navbar-default .navbar-nav > li > a:active,
+#main_navbar.navbar-default .navbar-nav > li > a:focus
+{
+    color: white;
+}
+#main_navbar.navbar-default .navbar-nav > li > a:hover
+{
+    color: white;
+}
+#main_navbar.navbar-default .navbar-nav > .active > a, 
+#main_navbar.navbar-default .navbar-nav > .active > a:hover, 
+#main_navbar.navbar-default .navbar-nav > .active > a:focus
+{
+    background-color: #2bacf5;
+    color: white;
+}
+
+
+.pagination li a,
+.pagination li a:hover,
+.pagination li a:visited,
+.pagination li a:active,
+.pagination li a:focus
+{
+    color: #555;
+}
+.pagination .active,
+.pagination .active a,
+.pagination .active a:hover,
+.pagination .active a:visited,
+.pagination .active a:active,
+.pagination .active a:focus
+{
+    background-color: #2bacf5;
+    border-color: #F58723;
+    color: white;
+}
+
+
+.pb-template a, .pb-template a:visited
+{
+    color: #444444;
+}
+
+.pb-template a:active, .pb-template a:hover, .pb-template a:focus
+{
+    color: #222222;
+    text-decoration: none;
+}
+
+.pb-callout 
+{
+    width: 100%;
+    background-color: rgba(245, 135, 35, 0.10);
+    border-left: 3px #F58723 solid;
+    padding: 15px 10px 15px 10px;
+    color: #343434;
+}

@@ -29,8 +29,8 @@ repositories {
 sourceCompatibility = project.javaVersion
 targetCompatibility = project.javaVersion
 
-//def bootModules = ['logging', 'actuator', 'thymeleaf']
-def bootModules = ['logging', 'actuator']
+def bootModules = ['logging', 'actuator', 'thymeleaf']
+//def bootModules = ['logging', 'actuator']
 
 dependencies {
   bootModules.each {module ->

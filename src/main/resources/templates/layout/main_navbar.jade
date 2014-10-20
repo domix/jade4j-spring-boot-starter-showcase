@@ -1,0 +1,22 @@
+#main_navbar.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#main_navbar_items')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='/') Home
+    #main_navbar_items.navbar-collapse.collapse
+      ul.nav.navbar-nav
+        li
+          a(href='http://projects.spring.io/spring-boot/') Spring Boot
+        li
+          a(href='https://github.com/domix/spring-boot-starter-jade4j', target='_blank').fa.fa-github  Spring Boot jade4j Starter
+        li
+          a(href='https://github.com/domix/spring-boot-starter-jade4j-showcase', target='_blank').fa.fa-github  Showcase
+      ul.nav.navbar-nav.navbar-right
+        li(style='margin: 10px;')
+          div(style='display: inline-block; float: left;')
+            input#search_input.sui-input(type='text', style='width: 200px;', placeholder='Search...')
+          div(style='display: inline-block; float: left; margin-top: 3px; margin-left: 5px;')
+            span.glyphicon.glyphicon-filter(style='font-size: 18px;')

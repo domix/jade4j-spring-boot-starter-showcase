@@ -1,13 +1,11 @@
-include detail/detail.jade
-html
-  head
-    title Hola mundo
-    link(rel='stylesheet', type='text/css', href='/webjars/bootstrap/3.2.0/css/bootstrap.min.css')
-    link(rel='stylesheet', type='text/css', href='/webjars/font-awesome/4.2.0/css/font-awesome.min.css')
-    link(rel='stylesheet', type='text/css', href='/css/app.css')
-  body
-    h
-    h1
-    header
-      #{util.format(4)}
+extends ./layout/layout
 
+block page_title
+  .col-md-12.col-sm-6.col-xs-12
+    h1 #{util.message('title')}
+      small #{util.message('subtitle')}
+
+block body
+  include ./detail/detail.jade
+  each property in properties
+    +property_detail(property)
