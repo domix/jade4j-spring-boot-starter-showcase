@@ -10,7 +10,7 @@ mixin property_detail(property)
             .pull-left
               span.fa.fa-dollar.icon  #{util.formatNumber(property.price,  '#,#00.00')}
             .pull-right
-              | | #{property.squareFeet} Sqrt | #{property.bedrooms} beds | #{property.bathrooms} baths
+              | | #{property.squareFeet} SqFt | #{property.bedrooms} Bedrooms | #{property.bathrooms} bathrooms
           div
             h4
               span.fa.fa-map-marker.icon  #{property.address}

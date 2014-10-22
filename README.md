@@ -1,6 +1,8 @@
 Spring Boot jade4j Starter showcase
 ===================================
 
+This is a typical Spring Boot webapp that uses Jade views, as alternative to other verbose template engines.
+
 **How to run the Showcase**
 
 - Clone the repo
