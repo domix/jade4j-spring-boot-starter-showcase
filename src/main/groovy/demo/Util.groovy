@@ -15,10 +15,6 @@ class Util {
   @Autowired
   MessageSource messageSource
 
-  String format(double number) {
-    "number ${number}"
-  }
-
   String message(String code) {
     messageSource.getMessage(code, null, null)
   }

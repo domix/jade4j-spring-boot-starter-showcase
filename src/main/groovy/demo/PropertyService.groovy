@@ -31,13 +31,4 @@ class PropertyService {
       thumbnail: thumbnail)
   }
 
-  /*
-  
-  
-  
-  
-  
-  
-  */
-
 }
