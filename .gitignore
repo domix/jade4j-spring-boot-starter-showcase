@@ -6,3 +6,7 @@ out
 *.ipr
 *.iws
 .idea
+index.html
+.classpath
+.project
+.settings

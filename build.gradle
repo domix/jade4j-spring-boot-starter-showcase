@@ -14,6 +14,7 @@ apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'spring-boot'
 apply plugin: 'idea'
+apply plugin: 'eclipse'
 apply plugin: 'watch'
 
 repositories {
@@ -30,14 +31,13 @@ sourceCompatibility = project.javaVersion
 targetCompatibility = project.javaVersion
 
 def bootModules = ['logging', 'actuator', 'thymeleaf']
-//def bootModules = ['logging', 'actuator']
 
 dependencies {
-  bootModules.each {module ->
+  bootModules.each { module ->
     compile "org.springframework.boot:spring-boot-starter-${module}:${project.springBootVersion}"
   }
-  compile "org.springframework.boot:spring-boot-starter-jade4j:0.1.1-SNAPSHOT"
-  compile 'org.codehaus.groovy:groovy-all:2.3.7'
+  compile "org.springframework.boot:spring-boot-starter-jade4j:0.1.2-SNAPSHOT"
+  compile 'org.codehaus.groovy:groovy-all:2.3.8'
   compile 'org.webjars:bootstrap:3.2.0'
   compile 'org.webjars:font-awesome:4.2.0'
 }
