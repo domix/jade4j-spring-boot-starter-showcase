@@ -1,6 +1,8 @@
 Spring Boot jade4j Starter showcase
 ===================================
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/domix/spring-boot-starter-jade4j-showcase?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is a typical Spring Boot webapp that uses Jade views, as alternative to other verbose template engines.
 
 **How to run the Showcase**
