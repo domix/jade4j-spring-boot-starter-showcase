@@ -23,8 +23,6 @@ repositories {
 
   maven { url 'http://repo.spring.io/libs-release' }
   maven { url "http://repo.springsource.org/repo" } // for springloaded
-
-  maven { url 'http://repo.sindica.to/nexus/content/repositories/snapshots/' }
 }
 
 sourceCompatibility = project.javaVersion
@@ -36,8 +34,8 @@ dependencies {
   bootModules.each { module ->
     compile "org.springframework.boot:spring-boot-starter-${module}:${project.springBootVersion}"
   }
-  compile "org.springframework.boot:spring-boot-starter-jade4j:0.1.2-SNAPSHOT"
-  compile 'org.codehaus.groovy:groovy-all:2.3.8'
+  compile "org.springframework.boot:spring-boot-starter-jade4j:0.1.4"
+  compile 'org.codehaus.groovy:groovy-all:2.3.9'
   compile 'org.webjars:bootstrap:3.2.0'
   compile 'org.webjars:font-awesome:4.2.0'
 }

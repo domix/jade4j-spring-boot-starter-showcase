@@ -7,6 +7,8 @@ import org.springframework.context.MessageSource
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 
+import static org.springframework.context.i18n.LocaleContextHolder.getLocale
+
 /**
  * Created by domix on 08/10/14.
  */
@@ -16,7 +18,7 @@ class Util {
   MessageSource messageSource
 
   String message(String code) {
-    messageSource.getMessage(code, null, null)
+    messageSource.getMessage(code, null, "not found: '${code}'", getLocale())
   }
 
   //TODO: implement i18n with params
