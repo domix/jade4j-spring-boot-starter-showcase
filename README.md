@@ -18,5 +18,3 @@ This is a typical Spring Boot webapp that uses Jade views, as alternative to oth
 You can change the Jade templates located in ./src/main/resources/templates
 
 !["Spring Boot jade4j Starter"](https://farm6.staticflickr.com/5600/14967400963_a37f846550_c.jpg)
-
-
