@@ -1,0 +1,14 @@
+sudo: false
+
+cache:
+  directories:
+  - $HOME/.gradle
+
+language: groovy
+
+jdk:
+- oraclejdk7
+
+env:
+- TERM=dumb
+
