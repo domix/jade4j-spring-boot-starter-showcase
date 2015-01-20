@@ -1,7 +1,7 @@
 package demo
 
+import com.domingosuarez.boot.autoconfigure.jade4j.JadeHelper
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.boot.autoconfigure.jade4j.JadeHelper
 import org.springframework.context.MessageSource
 
 import java.text.DecimalFormat
