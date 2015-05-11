@@ -33,7 +33,7 @@ dependencies {
   bootModules.each { module ->
     compile "org.springframework.boot:spring-boot-starter-${module}:${project.springBootVersion}"
   }
-  compile "com.domingosuarez.boot:spring-boot-starter-jade4j:0.2"
+  compile "com.domingosuarez.boot:spring-boot-starter-jade4j:0.2.1"
   compile 'org.codehaus.groovy:groovy-all:2.4.3'
   compile 'org.webjars:bootstrap:3.2.0'
   compile 'org.webjars:font-awesome:4.2.0'
