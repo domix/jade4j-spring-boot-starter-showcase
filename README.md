@@ -19,6 +19,6 @@ This demo uses [Spring Boot jade4j Starter](https://github.com/domix/spring-boot
   - type: gradle.bat bootRun
 - Navigate with your browser to: http://localhost:9090
 
-You can change the Jade templates located in ./src/main/resources/templates
+You can change the Jade templates located in `./src/main/resources/templates`
 
 !["Spring Boot jade4j Starter"](https://farm6.staticflickr.com/5600/14967400963_a37f846550_c.jpg)
