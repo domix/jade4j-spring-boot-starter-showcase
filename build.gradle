@@ -36,7 +36,7 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-${module}:${project.springBootVersion}"
   }
   compile "com.domingosuarez.boot:spring-boot-starter-jade4j:0.3.0"
-  compile 'org.codehaus.groovy:groovy-all:2.4.3'
+  compile 'org.codehaus.groovy:groovy-all:2.4.4'
   compile 'org.webjars:bootstrap:3.3.5'
   compile 'org.webjars:font-awesome:4.3.0-3'
 }
