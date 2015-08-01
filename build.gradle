@@ -33,8 +33,9 @@ def bootModules = ['logging', 'actuator', 'thymeleaf']
 
 dependencies {
   bootModules.each { module ->
-    compile "org.springframework.boot:spring-boot-starter-${module}:${project.springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-${module}"
   }
+  compile("org.springframework.boot:spring-boot-devtools")
   compile "com.domingosuarez.boot:spring-boot-starter-jade4j:0.3.0"
   compile 'org.codehaus.groovy:groovy-all:2.4.4'
   compile 'org.webjars:bootstrap:3.3.5'
@@ -50,4 +51,8 @@ watch {
     files files('src/main/resources')
     tasks 'processResources'
   }
+}
+
+bootRepackage  {
+    classifier = 'exec'
 }

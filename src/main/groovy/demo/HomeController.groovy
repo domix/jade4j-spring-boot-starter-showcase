@@ -16,6 +16,7 @@ class HomeController {
   @RequestMapping('/')
   String index(Model model) {
     model.addAttribute 'properties', propertyService.findProperties()
+    println "chido"
     'index'
   }
 
