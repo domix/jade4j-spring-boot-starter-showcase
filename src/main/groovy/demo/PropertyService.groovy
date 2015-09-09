@@ -13,6 +13,10 @@ class PropertyService {
       build('1', 30000.657, 40, 2, 1, '27 Colmore Row', ' This apartment is surrounded by plenty of businesses and right next to McGorlick park.There are 2 large rooms, wood floors throughout, kitchen and baths.', 'SOLD', '/house1.jpg'),
       build('1', 3000.23, 40, 2, 1, '3 Edgar Building', 'All buildings feature elevators, central laundry facilities and spacious apartments with wood flooring throughout', 'SOLD', '/condo2.jpg'),
       build('1', 30199.99, 40, 1, 1, '91 Western Road', 'A Warm & Bright prewar 1 Bedroom, upgraded kitchen Marble Bath, Granite counter tops, Stainless Steel appliances and Oak Flooring', 'SOLD', '/house2.jpg'),
+      build('1', 30199.99, 40, 1, 1, '91 Western Road', 'A Warm & Bright prewar 1 Bedroom, upgraded kitchen Marble Bath, Granite counter tops, Stainless Steel appliances and Oak Flooring', 'SOLD', '/house2.jpg'),
+      build('1', 30199.99, 40, 1, 1, '91 Western Road', 'A Warm & Bright prewar 1 Bedroom, upgraded kitchen Marble Bath, Granite counter tops, Stainless Steel appliances and Oak Flooring', 'SOLD', '/house2.jpg'),
+      build('1', 30199.99, 40, 1, 1, '91 Western Road', 'A Warm & Bright prewar 1 Bedroom, upgraded kitchen Marble Bath, Granite counter tops, Stainless Steel appliances and Oak Flooring', 'SOLD', '/house2.jpg'),
+
     ]
   }
 

@@ -3,7 +3,7 @@ buildscript {
     jcenter()
   }
   dependencies {
-    classpath 'org.springframework:springloaded:1.2.3.RELEASE'
+    classpath 'org.springframework:springloaded:1.2.4.RELEASE'
     classpath "org.springframework.boot:spring-boot-gradle-plugin:${project.springBootVersion}"
     classpath 'com.bluepapa32:gradle-watch-plugin:0.1.5'
     classpath 'com.github.ben-manes:gradle-versions-plugin:0.11.3'
@@ -35,11 +35,11 @@ dependencies {
   bootModules.each { module ->
     compile "org.springframework.boot:spring-boot-starter-${module}"
   }
-  compile("org.springframework.boot:spring-boot-devtools")
-  compile "com.domingosuarez.boot:spring-boot-starter-jade4j:0.3.0"
+  //compile("org.springframework.boot:spring-boot-devtools")
+  compile "com.domingosuarez.boot:spring-boot-starter-jade4j:0.3.1"
   compile 'org.codehaus.groovy:groovy-all:2.4.4'
   compile 'org.webjars:bootstrap:3.3.5'
-  compile 'org.webjars:font-awesome:4.3.0-3'
+  compile 'org.webjars:font-awesome:4.4.0'
 }
 
 watch {
@@ -53,6 +53,7 @@ watch {
   }
 }
 
-bootRepackage  {
-    classifier = 'exec'
+springBoot  {
+    executable = true
 }
+
