@@ -1,29 +1,32 @@
 buildscript {
+  ext {
+    springBootVersion = '2.0.4.RELEASE'
+  }
   repositories {
-    jcenter()
+    mavenCentral()
   }
   dependencies {
-    classpath 'org.springframework:springloaded:1.2.4.RELEASE'
-    classpath "org.springframework.boot:spring-boot-gradle-plugin:${project.springBootVersion}"
-    classpath 'com.bluepapa32:gradle-watch-plugin:0.1.5'
-    classpath 'com.github.ben-manes:gradle-versions-plugin:0.11.3'
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
   }
 }
 
 apply plugin: 'java'
 apply plugin: 'groovy'
-apply plugin: 'spring-boot'
+//apply plugin: 'spring-boot'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
-apply plugin: 'com.bluepapa32.watch'
-apply plugin: 'com.github.ben-manes.versions'
+//apply plugin: 'com.bluepapa32.watch'
+//apply plugin: 'com.github.ben-manes.versions'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 
 repositories {
   jcenter()
   mavenCentral()
+  mavenLocal()
 
-  maven { url 'http://repo.spring.io/libs-release' }
-  maven { url "http://repo.springsource.org/repo" } // for springloaded
+  //maven { url 'http://repo.spring.io/libs-release' }
+  //maven { url "http://repo.springsource.org/repo" } // for springloaded
 }
 
 sourceCompatibility = project.javaVersion
@@ -33,16 +36,21 @@ def bootModules = ['logging', 'actuator', 'thymeleaf']
 
 dependencies {
   bootModules.each { module ->
-    compile "org.springframework.boot:spring-boot-starter-${module}"
+    //compile "org.springframework.boot:spring-boot-starter-${module}"
   }
+  compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+  compile('org.springframework.boot:spring-boot-starter-web')
+  testCompile('org.springframework.boot:spring-boot-starter-test')
+
   //compile("org.springframework.boot:spring-boot-devtools")
-  compile "com.domingosuarez.boot:spring-boot-starter-jade4j:0.3.1"
+  //compile "com.domingosuarez.boot:spring-boot-starter-jade4j:0.3.1"
+  compile "com.domingosuarez.boot:jade4j-spring-boot-starter:2.0.4.RELEASE"
   compile 'org.codehaus.groovy:groovy-all:2.4.4'
   compile 'org.webjars:bootstrap:3.3.5'
   compile 'org.webjars:font-awesome:4.4.0'
 }
 
-watch {
+/*watch {
   groovy {
     files files('src/main/groovy')
     tasks 'compileGroovy'
@@ -56,4 +64,4 @@ watch {
 springBoot  {
     executable = true
 }
-
+*/
